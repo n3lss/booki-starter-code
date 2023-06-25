@@ -205,6 +205,9 @@ header {
     border: 2px solid rgba(217, 217, 217, 1);
 } */
 .filtre button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
     background-color: white;
     height: 50px;
     width: 173px;
@@ -218,11 +221,21 @@ header {
     letter-spacing: 0em;
     text-align: center;
 }
+.filtre :hover {
+    background-color: var(--filter-bg-color);
+}
+.filtre p :hover {
+    background-color: white;
+}
+
 /* .filtre div :hover {
     
     background-color: var(--filter-bg-color);
 } */
 .filtre i {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     color: #0065FC;
     font-size: 19px;
     width: 22px;
