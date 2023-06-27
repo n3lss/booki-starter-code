@@ -204,14 +204,17 @@ header {
     gap: 10px;
     border: 2px solid rgba(217, 217, 217, 1);
 } */
+.filtre div {
+    display: flex;
+}
 .filtre button{
+    margin-right: 10px;
     justify-content: center;
     align-items: center;
     display: flex;
     background-color: white;
     height: 50px;
-    width: 173px;
-    padding: 4px 8px 4px 8px;
+    padding: 4px 10px 4px 10px;
     border-radius: 40px;
     gap: 10px;
     border: 2px solid rgba(217, 217, 217, 1);
@@ -221,11 +224,8 @@ header {
     letter-spacing: 0em;
     text-align: center;
 }
-.filtre :hover {
+.filtre div :hover {
     background-color: var(--filter-bg-color);
-}
-.filtre p :hover {
-    background-color: white;
 }
 
 /* .filtre div :hover {
