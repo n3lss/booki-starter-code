@@ -75,8 +75,7 @@ header {
 
 /* info-groupe */
 .info-groupe {
-    width: Fill (1,340px);
-    height: Hug (281px);
+    height: 281px;
     gap: 35px;
 
 }
@@ -84,8 +83,7 @@ header {
 /* titre */
 
 .titre {
-    width: Fill (1,340px);
-    height: Fixed (53px);
+    height: 53px;
 }
 
 .titre h1 { 
@@ -117,7 +115,7 @@ header {
 .recherche-bar {
     margin-top: 15px;
     width: 362px;
-    height: Fixed (49px);
+    height: 49px;
     border-radius: 15px;
     gap: 0px;
     display: flex;
@@ -187,8 +185,8 @@ header {
 .filtre {
     margin-top: 25px;
     display: flex;
-    width: Hug (758px);
-    height: Fixed (50px);
+    width: 758px;
+    height: 50px;
     gap: 15px;
     font-size: 18px;
     font-weight: 700;
@@ -262,8 +260,8 @@ header {
     margin-top: 25px;
     margin-bottom: 25px;
     display: flex;
-    width: Fill (1,340px);
-    height: Fixed (24px);
+    width: 1,340px;
+    height: 24px;
     gap: 10px;
 }
 
@@ -398,9 +396,26 @@ header {
     margin-bottom: 5px;
 }
 
+/* activiter */
 
+.activiter {
+    margin-top: 40px;
+}
 
+.activiter div {
+    display: flex;
+    width:  1,280px;
+    height: 439px;
+    gap: 30px;
 
+}
+
+.activiter img {
+    width: 297px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px
+}
+/* footer */
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
