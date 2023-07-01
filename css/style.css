@@ -58,20 +58,26 @@ header {
 }
 
 
-/* navbar et logo */
-
+/* header*/
+header {
+    justify-content: space-between;
+}
 .logo {
     width: 61px;
     height: 19px;
-    padding: 30px;
+    padding: 30px 30px 30px 0px;
     gap: 10px;
 }
 
 .top {
-    position: absolute;
-    right: 0;
-    display: flex;
     justify-content: end;
+}
+
+.main-container input {
+    justify-content: end;
+    background: #ffffff;
+    border: 1px none rgb(242, 242, 242);
+    color: #0065FC;
 }
 
 /* info-groupe */
@@ -171,14 +177,7 @@ header {
 
 }
 
-/* .filtre {
-    margin-top: 25px;
-    display: flex;
-    width: Hug (758px);
-    height: Fixed (50px);
-    gap: 15px;
 
-} */
 
 
 /* filtre */
@@ -195,14 +194,7 @@ header {
     letter-spacing: 0em;
     text-align: center;
 }
-/* .filtre div{
-    background-color: white;
-    height: 40px;
-    padding: 4px 8px 4px 8px;
-    border-radius: 40px;
-    gap: 10px;
-    border: 2px solid rgba(217, 217, 217, 1);
-} */
+
 .filtre div {
     display: flex;
 }
@@ -227,10 +219,7 @@ header {
     background-color: var(--filter-bg-color);
 }
 
-/* .filtre div :hover {
-    
-    background-color: var(--filter-bg-color);
-} */
+
 .filtre i {
     justify-content: center;
     align-items: center;
@@ -243,18 +232,7 @@ header {
 
 }
 
-/* .filtre input {
-    border-radius: 40px;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: center;
-    padding: 10px 16px 10px 5px;
-    border: 1px none rgb(242, 242, 242);
-    background-color: white    
-}
- */
+
 /* info-bar */
 
 .info-bar {
