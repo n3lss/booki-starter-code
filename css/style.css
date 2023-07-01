@@ -70,7 +70,8 @@ header {
 .top {
     position: absolute;
     right: 0;
-    margin-right: 10%;
+    display: flex;
+    justify-content: end;
 }
 
 /* info-groupe */
@@ -394,28 +395,46 @@ header {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+    
 }
 
 /* activiter */
 
 .activiter {
     margin-top: 40px;
+    margin: 40px 0px 40px 0px;
 }
 
 .activiter div {
+    
     display: flex;
-    width:  1,280px;
+    width:  100%;
     height: 439px;
     gap: 30px;
 
 }
 
+.activiter article {
+    width: 23%;
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 20px 20px 20px 20px
+}
+
 .activiter img {
-    width: 297px;
+    width: 100%;
     height: 380px;
     border-radius: 20px 20px 0px 0px
 }
 /* footer */
+
+footer {
+    
+    display: flex;
+    align-items: end;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: var(--main-bg-color);
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
