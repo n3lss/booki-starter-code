@@ -56,7 +56,9 @@ header {
 .neutral-star {
     color: var(--main-bg-color);
 }
-
+ul {
+    list-style: none;
+}
 
 /* header*/
 header {
@@ -379,23 +381,31 @@ header {
 /* activiter */
 
 .activiter {
-    margin-top: 40px;
-    margin: 40px 0px 40px 0px;
-}
-
-.activiter div {
-    
-    display: flex;
-    width:  100%;
-    height: 439px;
+    width:  1,340px;
+    height: 559.02px;
+    padding: 30px;
     gap: 30px;
 
 }
 
+.activiter div {
+    display: flex;
+    width:  100%;
+    height: 439px;
+    gap: 30px;
+    
+}
+
 .activiter article {
+    justify-content: center;
     width: 23%;
-    border: 1px solid rgba(217, 217, 217, 1);
-    border-radius: 20px 20px 20px 20px
+    border: 1px none rgba(217, 217, 217, 1);
+    padding: 0%;
+}
+
+.activiter h4 {
+    margin: 0;
+    padding: 15px;
 }
 
 .activiter img {
@@ -406,13 +416,38 @@ header {
 /* footer */
 
 footer {
-    
     display: flex;
-    align-items: end;
     width: 100%;
-    justify-content: space-evenly;
     background-color: var(--main-bg-color);
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 15px;
 }
+.bas-page ul {
+    width: 33%;/* 
+    padding: 0 0 0 5px;
+    margin-left: 10px; */
+}
+.bas-page ul li {
+    margin: 13px 0px 13px 0px;
+}
+.bas-page ul li:nth-child(1) {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.bas-page ul li:nth-child(n+2) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
