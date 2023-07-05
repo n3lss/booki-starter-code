@@ -38,7 +38,7 @@ header {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .card img {
@@ -381,24 +381,22 @@ header {
 /* activiter */
 
 .activiter {
-    width:  1,340px;
+    width:  calc(100% - 30px);
     height: 559.02px;
     padding: 30px;
-    gap: 30px;
-
 }
 
 .activiter div {
     display: flex;
-    width:  100%;
+    width:  calc(100% - 30px);
     height: 439px;
     gap: 30px;
-    
+    justify-content: space-between;
 }
 
 .activiter article {
     justify-content: center;
-    width: 23%;
+    width: 25%;
     border: 1px none rgba(217, 217, 217, 1);
     padding: 0%;
 }
@@ -453,14 +451,34 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires {
         flex-direction: column;
     }
-
+    /****** Hebergements ***********/
     .hebergements {
         width: 100%;
     }
 
+     .hebergements-cards {
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* .hebergements-cards .card {
+        width: 30%;
+    } */
+
+    .hebergements-cards .card-title {
+        font-size: 14px;
+    }
+
+    .hebergements-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    /****** Populaires ***********/
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -484,23 +502,34 @@ footer {
         font-size: 13px;
     }
 
-    .hebergements-cards {
+    /* activiter */
+
+    .activiter {
+    width:  calc(100% - 30px);
+    height: 400.02px;
+    padding: 30px;
+    }
+
+    .activiter div {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        width:  100%;
+        height: 200px;
+        gap: 30px;
+        
     }
-
-    .hebergements-cards .card {
-        width: 30%;
+    
+    .activiter article {
+        justify-content: center;
+        width: 50%;
+        height: 200px;
+        
     }
-
-    .hebergements-cards .card-title {
-        font-size: 14px;
+    .activiter img {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0px 0px
     }
-
-    .hebergements-cards .card-subtitle {
-        font-size: 13px;
-    }
+   
 }
 
 /* Small devices (phones, less than 768px) */
