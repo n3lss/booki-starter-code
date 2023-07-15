@@ -20,6 +20,7 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
 }
 
 .main-container {
@@ -59,11 +60,13 @@ header {
 ul {
     list-style: none;
 }
-
-/* header*/
-header {
-    justify-content: space-between;
+a {
+    outline: none;
+    text-decoration: none;
+    color: black;
 }
+/* header*/
+
 .logo {
     width: 61px;
     height: 19px;
@@ -76,28 +79,28 @@ header {
     gap: 30px;
     justify-content: space-between;
 }
-.button-hebergements a {
-    display: block;
-}
-.button-hebergements :focus {
+
+.top ul li a:hover {
     padding: 10px;
-    box-shadow: 0px -2px 0px #4f81bd;
-    -webkit-box-shadow: 0px -2px 0px #4f81bd;
-    -moz-box-shadow: 0px -2px 0px #4f81bd;
-    background-color: red;
+    box-shadow: 0px -2px 0px var(--main-color);
+    -webkit-box-shadow: 0px -2px 0px var(--main-color);
+    -moz-box-shadow: 0px -2px 0px var(--main-color);
+    color: var(--main-color); 
 }
-.button-activiter :focus {
+
+/* .button-activiter:hover {
     padding: 10px;
-    box-shadow: 0px -2px 0px #4f81bd;
-    -webkit-box-shadow: 0px -2px 0px #4f81bd;
-    -moz-box-shadow: 0px -2px 0px #4f81bd;
-    background-color: red;
-}
+    box-shadow: 0px -2px 0px var(--main-color);
+    -webkit-box-shadow: 0px -2px 0px var(--main-color);
+    -moz-box-shadow: 0px -2px 0px var(--main-color);
+    color: var(--main-color);
+} */
+
 .main-container li {
     justify-content: space-between;
     background: #ffffff;
-    border: 1px none rgb(242, 242, 242);
-    color: #0065FC;
+    border: none;
+    
 }
 
 /* info-groupe */
@@ -115,7 +118,7 @@ header {
 
 .titre h1 { 
     margin-bottom: 0px;
-    width: 1340px;
+    
     height: 26px;
     font-size: 22px;
     font-weight: 700;
@@ -128,7 +131,7 @@ header {
 .titre p {
     margin-top: none;
     margin-bottom: 25px;
-    width: 1340px;
+    width: 100%;
     height: 19px;
     font-size: 16px;
     font-weight: 400;
@@ -180,8 +183,8 @@ header {
 }
 
 .recherche-bar .recherche {
-    width: Hug (132px);
-    height: Fixed (49px);
+    width: 132px;
+    height: 49px;
     padding: 15px 16px 15px 16px;
     border-radius: 0px 15px 15px 0px;
     border: 1px;
@@ -530,11 +533,9 @@ footer {
     }
 
     .activiter div {
-        display: flex;
         width:  100%;
         height: 200px;
         gap: 30px;
-        
     }
     
     .activiter article {
@@ -553,5 +554,29 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    
+    .main-container {
+        padding: 0%;
+        max-width: 767.95px;
+    }
+
+    header {
+        display: inline;
+        justify-content: center;
+    }
+
+    .logo {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: 0% 50% 0% 50%;
+    }
+
+    .top ul {
+        display: flex;
+        gap: 30px;
+        justify-content: space-around;
+    }
+
+    
 }
